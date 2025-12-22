@@ -57,7 +57,7 @@ export default async function ChallengeDetailPage({ params }: { params: { id: st
         <Card>
           <CardHeader>
             <CardTitle>Challenge Not Found</CardTitle>
-            <CardDescription>This challenge doesn't exist or you don't have access to it.</CardDescription>
+            <CardDescription>This challenge doesn&apos;t exist or you don&apos;t have access to it.</CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/app/history">
@@ -192,7 +192,7 @@ export default async function ChallengeDetailPage({ params }: { params: { id: st
       {!submission && (
         <Card>
           <CardContent className="py-12 text-center">
-            <p className="text-muted-foreground">You haven't submitted this challenge yet.</p>
+            <p className="text-muted-foreground">You haven&apos;t submitted this challenge yet.</p>
           </CardContent>
         </Card>
       )}

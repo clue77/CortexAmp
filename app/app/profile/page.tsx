@@ -145,7 +145,7 @@ export default function ProfilePage() {
                 value={displayName}
                 onChange={(e) => setDisplayName(e.target.value)}
               />
-              <p className="text-xs text-muted-foreground">This is how we'll greet you in the app</p>
+              <p className="text-xs text-muted-foreground">This is how we&apos;ll greet you in the app</p>
             </div>
 
             <div className="space-y-2">

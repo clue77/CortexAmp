@@ -70,7 +70,7 @@ export default async function DashboardPage() {
           Welcome back{profile?.display_name ? `, ${profile.display_name}` : ''}!
         </h1>
         <p className="text-muted-foreground">
-          {hasCompletedToday ? "You've completed today's challenge!" : "Ready for today's challenge?"}
+          {hasCompletedToday ? "You&apos;ve completed today&apos;s challenge!" : "Ready for today&apos;s challenge?"}
         </p>
       </div>
 
@@ -80,7 +80,7 @@ export default async function DashboardPage() {
             <div className="max-w-md mx-auto">
               <h2 className="text-2xl font-bold mb-2">Welcome to CortexAmp! 🎉</h2>
               <p className="text-muted-foreground mb-6">
-                You're about to start building practical AI skills. Complete your first challenge to see your progress here.
+                You&apos;re about to start building practical AI skills. Complete your first challenge to see your progress here.
               </p>
               <Link href="/app/today">
                 <Button size="lg" className="gap-2">
@@ -141,7 +141,7 @@ export default async function DashboardPage() {
               <div>
                 <CardTitle className="flex items-center gap-2">
                   <Calendar className="h-5 w-5" />
-                  Today's Challenge
+                  Today&apos;s Challenge
                 </CardTitle>
                 <CardDescription className="mt-2">
                   {todayChallenge ? (todayChallenge.track as any)?.title : 'No challenge available'}

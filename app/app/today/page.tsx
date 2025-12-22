@@ -229,12 +229,12 @@ export default function TodayChallengePage() {
         <>
           <div className="mb-6">
             <p className="text-primary font-semibold mb-2">✓ Challenge Complete!</p>
-            <p className="text-muted-foreground">Here's your AI-generated feedback</p>
+            <p className="text-muted-foreground">Here&apos;s your AI-generated feedback</p>
           </div>
 
           <div className="mb-4 p-3 bg-primary/5 border border-primary/20 rounded-lg">
             <p className="text-sm text-foreground font-medium">
-              Nice work for showing up. Here's how to level this up.
+              Nice work for showing up. Here&apos;s how to level this up.
             </p>
           </div>
 
@@ -353,7 +353,7 @@ export default function TodayChallengePage() {
       ) : (
         <>
           <div className="mb-6">
-            <h1 className="text-3xl font-bold mb-2">Today's Challenge</h1>
+            <h1 className="text-3xl font-bold mb-2">Today&apos;s Challenge</h1>
             <p className="text-muted-foreground">{(challenge.track as any)?.title}</p>
             <p className="text-sm text-muted-foreground mt-2 italic">
               {SKILL_LEVEL_FRAMING[skillLevel as SkillLevel]}
@@ -471,7 +471,7 @@ export default function TodayChallengePage() {
                       onClick={insertScaffold}
                       className="text-xs text-primary hover:underline"
                     >
-                      I'm stuck — help me get started
+                      I&apos;m stuck — help me get started
                     </button>
                   )}
                 </div>
@@ -482,7 +482,7 @@ export default function TodayChallengePage() {
 
                 <div className="space-y-2">
                   <p className="text-xs text-muted-foreground text-center">
-                    Submit your best attempt — you'll get instant AI feedback
+                    Submit your best attempt — you&apos;ll get instant AI feedback
                   </p>
                   <Button type="submit" disabled={submitting || !submissionText.trim()} className="w-full" size="lg">
                     {submitting ? (

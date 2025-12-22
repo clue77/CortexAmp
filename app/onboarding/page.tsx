@@ -83,7 +83,7 @@ export default function OnboardingPage() {
   if (checking) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-muted-foreground">Loading...</p>
+        <p className="text-muted-foreground mb-8">Let&apos;s personalize your experience</p>
       </div>
     );
   }
@@ -99,7 +99,7 @@ export default function OnboardingPage() {
             </span>
           </div>
           <CardTitle className="text-2xl">Welcome to CortexAmp! 🎉</CardTitle>
-          <CardDescription>Let's get you set up in just 2 quick steps</CardDescription>
+          <CardDescription>Let&apos;s get you set up in just 2 quick steps</CardDescription>
         </CardHeader>
         <CardContent>
           {step === 1 ? (
@@ -115,7 +115,7 @@ export default function OnboardingPage() {
                   maxLength={50}
                 />
                 <p className="text-xs text-muted-foreground">
-                  This will appear on your dashboard. You can skip this if you prefer.
+                  Don&apos;t worry, you can change this anytime
                 </p>
               </div>
 
@@ -128,9 +128,9 @@ export default function OnboardingPage() {
           ) : (
             <div className="space-y-6">
               <div className="space-y-4">
-                <Label className="text-base">What's your AI experience level?</Label>
+                <Label className="text-base">What&apos;s your AI experience level?</Label>
                 <p className="text-sm text-muted-foreground">
-                  This helps us show you the right challenges. Don't worry, you can change this later!
+                  This helps us show you the right challenges. Don&apos;t worry, you can change this later!
                 </p>
 
                 <div className="grid gap-3">
