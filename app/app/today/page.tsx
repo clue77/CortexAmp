@@ -66,7 +66,6 @@ export default function TodayChallengePage() {
 
       if (challengeError || !challengeData) {
         console.error('Challenge query error:', challengeError);
-        console.log('Query params:', { today, userSkillLevel, is_published: true });
         setError(`No challenge available for today (${today}) at your skill level (${userSkillLevel}). Please check back later or contact support.`);
         setLoading(false);
         return;

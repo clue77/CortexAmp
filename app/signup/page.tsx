@@ -34,8 +34,6 @@ export default function SignupPage() {
         throw error;
       }
 
-      console.log('Signup response:', data);
-
       // No email confirmation required - redirect to onboarding
       router.push('/onboarding');
       router.refresh();

@@ -66,11 +66,6 @@ export async function POST(request: NextRequest) {
       generatedChallenges.map(async (challenge) => {
         const fingerprint = generateChallengeFingerprint(challenge.canonical_goal);
         
-        console.log('Processing challenge:', {
-          title: challenge.title,
-          canonical_goal: challenge.canonical_goal,
-          fingerprint: fingerprint.substring(0, 16) + '...',
-        });
 
         // Check for exact duplicate (Layer 1)
         const { data: duplicate } = await supabase
@@ -82,7 +77,6 @@ export async function POST(request: NextRequest) {
         let similarityStatus: 'duplicate' | 'very_similar' | 'sufficiently_different' = 'sufficiently_different';
 
         if (duplicate) {
-          console.log('  → DUPLICATE fingerprint found in database');
           similarityStatus = 'duplicate';
         } else {
           // Check semantic similarity (Layer 2)
@@ -90,7 +84,6 @@ export async function POST(request: NextRequest) {
             challenge.canonical_goal,
             existingGoals
           );
-          console.log('  → Similarity check result:', similarityStatus);
         }
 
         return {
